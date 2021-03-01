@@ -1,6 +1,8 @@
 import pyautogui,time
 import keyboard 
 
+MessageLimit = 100
+Message = ' '
 for i in range(1,6):
     print(str(i))
     time.sleep(1)
@@ -9,8 +11,8 @@ for i in range(1,6):
 
 
 def main(): 
-    for i in range(0,1000):
-        pyautogui.typewrite('@Pr1nce')
+    for i in range(0,MessageLimit):
+        pyautogui.typewrite(Message)
         pyautogui.press("enter")
         pyautogui.press("enter")
         time.sleep(0.1)
