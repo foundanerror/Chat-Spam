@@ -1,8 +1,8 @@
 import pyautogui,time
 import keyboard 
 
-MessageLimit = 100
-Message = ' '
+MessageLimit = int(input("Please State Message Limit in Numbers: "))
+Message = str(input('Please State Message: '))
 for i in range(1,6):
     print(str(i))
     time.sleep(1)
